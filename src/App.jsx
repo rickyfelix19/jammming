@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import SearchBar from "./components/Search Bar/SearchBar";
+import Tracklist from "./components/Track/Tracklist";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         </h1>
         <SearchBar />
       </div>
+      <Tracklist />
     </div>
   );
 }
