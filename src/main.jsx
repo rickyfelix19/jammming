@@ -9,6 +9,9 @@ ReactDOM.render(
       style={{
         backgroundImage: `url('https://framerusercontent.com/images/mxcZzEaRKh3MaagzTV1hM3ayfJo.jpg')`,
         backgroundPosition: "center",
+        height: "100%",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
       }}
     >
       <App />
