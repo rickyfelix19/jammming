@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import SearchBar from "./components/Search Bar/SearchBar";
 import Tracklist from "./components/Track/Tracklist";
+import SearchResult from "./components/Left Tab/SearchResult";
 
 function App() {
   return (
@@ -14,7 +15,10 @@ function App() {
         </h1>
         <SearchBar />
       </div>
-      <Tracklist />
+      <div className="grid grid-cols-2 gap-4">
+        <Tracklist />
+        <SearchResult />
+      </div>
     </div>
   );
 }

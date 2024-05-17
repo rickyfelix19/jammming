@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
 function Playlist() {
   return (
-    <div>Playlist</div>
-  )
+    <div>
+      <button className="btn btn-secondary">Save to Playlist</button>
+    </div>
+  );
 }
 
-export default Playlist
+export default Playlist;
