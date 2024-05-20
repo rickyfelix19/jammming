@@ -3,6 +3,8 @@ import SearchBar from "./components/Search Bar/SearchBar";
 import Tracklist from "./components/Track/Tracklist";
 import SearchResult from "./components/Left Tab/SearchResult";
 
+import { MultipleTracks } from "./components/Left Tab/MultipleTracks";
+
 function App() {
   return (
     <div>
@@ -16,7 +18,8 @@ function App() {
         <SearchBar />
       </div>
       <div className="grid grid-cols-2 gap-4">
-        <Tracklist />
+        <Tracklist track={MultipleTracks} />
+
         <SearchResult />
       </div>
     </div>
