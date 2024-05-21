@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import SearchBar from "./components/Search Bar/SearchBar";
-import Tracklist from "./components/Track/Tracklist";
+import Tracklist from "./components/Left Tab/Tracklist";
 import SearchResult from "./components/Left Tab/SearchResult";
 
 import { MultipleTracks } from "./components/Left Tab/MultipleTracks";

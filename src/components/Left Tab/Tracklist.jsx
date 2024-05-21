@@ -9,7 +9,7 @@ const Tracklist = (props) => {
         style={{ backgroundColor: "rgba(82, 72, 143, 0.9)", height: "100%" }}
       >
         <h1 className="mx-2 my-3">Results</h1>
-        {props.tracks.map((track) => {
+        {props.track.map((track) => {
           return <Track key={track.id} track={track} />;
         })}
         {/* <Track />
