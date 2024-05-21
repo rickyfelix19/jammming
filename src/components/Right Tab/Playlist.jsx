@@ -1,6 +1,14 @@
-import React from "react";
+import React, { useCallback } from "react";
 
-function Playlist() {
+import Tracklist from "../Left Tab/Tracklist";
+
+function Playlist(props) {
+  const handleNameChange = useCallback(
+    (event) => {
+      props.onNameChange(event.target.value);
+    },
+    [props.onNameChange]
+  );
   return (
     <div>
       <div>
@@ -19,6 +27,13 @@ function Playlist() {
                 className="input input-bordered w-full max-w-xs"
               />
             </label>
+            <div>
+              <Tracklist
+                tracks={props.playlistTracks}
+                isRemoval={true}
+                onRemove={props.onRemove}
+              />
+            </div>
           </div>
           <div className="my-20">
             <button className="btn btn-secondary">Save to Playlist</button>
