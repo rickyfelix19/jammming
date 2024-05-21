@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import SearchBar from "./components/Search Bar/SearchBar";
 import Tracklist from "./components/Left Tab/Tracklist";
-import SearchResult from "./components/Left Tab/SearchResult";
+// import SearchResult from "./components/Left Tab/SearchResult";
+import Playlist from "./components/Right Tab/Playlist";
 
 import { MultipleTracks } from "./components/Left Tab/MultipleTracks";
 
@@ -19,8 +20,9 @@ function App() {
       </div>
       <div className="grid grid-cols-2 gap-4">
         <Tracklist track={MultipleTracks} />
+        <Playlist />
 
-        <SearchResult />
+        {/* <SearchResult /> */}
       </div>
     </div>
   );
